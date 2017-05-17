@@ -1,0 +1,228 @@
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-center {
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.ul-unstyled,
+.nav-bar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.stn-padding {
+  padding: 80px 0;
+}
+/* font-family: "SegoeUIRegular"; */
+@font-face {
+  font-family: 'SegoeUIRegular';
+  src: url('../fonts/SegoeUIRegular/SegoeUIRegular.eot');
+  src: url('../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUIRegular/SegoeUIRegular.woff') format('woff'), url('../fonts/SegoeUIRegular/SegoeUIRegular.ttf') format('truetype'), url('../fonts/SegoeUIRegular/SegoeUIRegular.svg#SegoeUIRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* font-family: "SegoeUIBold"; */
+@font-face {
+  font-family: 'SegoeUIBold';
+  src: url('../fonts/SegoeUIBold/SegoeUIBold.eot');
+  src: url('../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUIBold/SegoeUIBold.woff') format('woff'), url('../fonts/SegoeUIBold/SegoeUIBold.ttf') format('truetype'), url('../fonts/SegoeUIBold/SegoeUIBold.svg#SegoeUIBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* font-family: "SegoeUILight"; */
+@font-face {
+  font-family: 'SegoeUILight';
+  src: url('../fonts/SegoeUILight/SegoeUILight.eot');
+  src: url('../fonts/SegoeUILight/SegoeUILight.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUILight/SegoeUILight.woff') format('woff'), url('../fonts/SegoeUILight/SegoeUILight.ttf') format('truetype'), url('../fonts/SegoeUILight/SegoeUILight.svg#SegoeUILight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* font-family: "SegoeUISemiBold"; */
+@font-face {
+  font-family: 'SegoeUISemiBold';
+  src: url('../fonts/SegoeUISemiBold/SegoeUISemiBold.eot');
+  src: url('../fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUISemiBold/SegoeUISemiBold.woff') format('woff'), url('../fonts/SegoeUISemiBold/SegoeUISemiBold.ttf') format('truetype'), url('../fonts/SegoeUISemiBold/SegoeUISemiBold.svg#SegoeUISemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icons/icomoon.eot');
+  src: url('../fonts/icons/icomoon.eot?#iefix') format('embedded-opentype'), url('../fonts/icons/icomoon.woff') format('woff'), url('../fonts/icons/icomoon.ttf') format('truetype'), url('../fonts/icons/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.sprite-instant,
+.sprite-frame,
+.sprite-serious,
+.sprite-coffee {
+  display: inline-block;
+  background: url('../img/sprite.png') no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+}
+.sprite-frame {
+  background-position: -5px 0px;
+  width: 48px;
+  height: 48px;
+}
+.sprite-instant {
+  background-position: -5px -53px;
+  width: 48px;
+  height: 48px;
+}
+.sprite-serious {
+  background-position: -5px -106px;
+  width: 48px;
+  height: 45px;
+}
+.sprite-coffee {
+  background-position: -5px -156px;
+  width: 34px;
+  height: 48px;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-google:before {
+  content: "\e900";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-coffee:before {
+  content: "\f0f4";
+}
+.icon-dribbble:before {
+  content: "\f17d";
+}
+.icon-quote:before {
+  content: "\e901";
+}
+.nav-bar li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.nav-bar li a {
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  border: 2px solid transparent;
+  color: #fff;
+  font-family: 'SegoeUIBold';
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 17px;
+  line-height: 1;
+}
+.nav-bar li a:hover {
+  text-decoration: none;
+  color: #4bcaff;
+}
+.nav-bar li a.active {
+  border-color: #4bcaff;
+  color: #4bcaff;
+}
+.nav-bar.black-font a {
+  color: #515f67;
+}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.btn-ghost-grey {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'SegoeUIBold';
+  color: #353f46;
+  border: 2px solid #353f46;
+  line-height: 1;
+  transition: all 0.3s ease-in-out;
+  padding: 1.07em 2.857em;
+  font-size: 1em;
+}
+.btn-ghost-grey:hover {
+  color: #4bcaff;
+  border-color: #4bcaff;
+}
+.frm-group {
+  margin-bottom: 35px;
+}
+.frm-control {
+  background-color: transparent;
+  border: 2px solid #fff;
+  height: 60px;
+  width: 100%;
+  padding: 0 15px;
+}
+textarea.frm-control {
+  height: 215px;
+}
+label {
+  display: block;
+  text-transform: uppercase;
+  font-family: 'SegoeUIBold';
+}
+.btn-submit {
+  width: 100%;
+  background-color: #4bcaff;
+  border: none;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 25px 0;
+  font-family: 'SegoeUIBold';
+  border: 2px solid #4bcaff;
+  transition: all 0.3s ease-in-out;
+}
+.btn-submit:hover {
+  background-color: transparent;
+  color: #4bcaff;
+}
+body {
+  font: 14px/1.71428571 'segoe', Arial, sans-sherif;
+  color: #515f67;
+}
+p {
+  margin-bottom: 1.785em;
+  margin-top: 0px;
+}
