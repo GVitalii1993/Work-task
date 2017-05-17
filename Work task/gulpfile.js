@@ -9,3 +9,7 @@ gulp.task('less', function () {
     }))
     .pipe(gulp.dest('./site/assets/css'));
 });
+
+gulp.task('less:watch', function () {
+	gulp.watch('./site/assets/less/**/*.less', ['less']);
+});
