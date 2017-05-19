@@ -21,14 +21,74 @@
 .stn-padding {
   padding: 100px 0;
 }
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url('../fonts/opensans-semibold/opensans-semibold.eot');
+  src: url('../fonts/opensans-semibold/opensans-semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-semibold/opensans-semibold.woff2') format('woff2'), url('../fonts/opensans-semibold/opensans-semibold.woff') format('woff'), url('../fonts/opensans-semibold/opensans-semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font: 14px/1.71428571 'segoe', Arial, sans-sherif;
   background: #515f67;
+  padding: 0px;
+  margin: 0px;
 }
 p {
   margin-bottom: 1.785em;
   margin-top: 0px;
 }
 body {
+  background: #f3f3f3;
+}
+.main-container {
+  width: 1440px;
   background: #fff;
+  margin: 0 auto;
+}
+.site-nav {
+  width: 1440px;
+  height: 100px;
+  position: fixed;
+}
+.logo {
+  width: 120px;
+  float: left;
+  margin-left: 135px;
+  margin-top: 25px;
+}
+.nav-bar {
+  float: right;
+  margin-right: 110px;
+  height: 100%;
+}
+.nav-bar ul {
+  height: 100px;
+}
+.nav-bar ul li {
+  display: inline;
+  font-size: 1em;
+  height: 100px;
+}
+.nav-bar ul li a {
+  height: 100%;
+  display: inline-block;
+  border-bottom: 5px solid transparent;
+  vertical-align: middle;
+  color: #485460;
+  font-family: 'open_sanssemibold';
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0px 25px;
+  z-index: 50;
+}
+.nav-bar ul li a:hover {
+  text-decoration: none;
+  background: #f8f9fb;
+  color: #68d1d3;
+  border-color: #68d1d3;
+}
+.nav-bar ul li a.active {
+  border-color: #68d1d3;
+  color: #68d1d3;
 }

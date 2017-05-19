@@ -1,3 +1,55 @@
 body {
+	background: #f3f3f3;
+}
+.main-container {
+	width: 1440px;
 	background: #fff;
+	margin: 0 auto;
+}
+.site-nav {
+	width: 1440px;
+	height: 100px;
+	position: fixed;
+}
+.logo {
+	width: 120px;
+	float: left;
+	margin-left: 135px;
+	margin-top: 25px;
+}
+.nav-bar {
+	float: right;
+	margin-right: 110px;
+	height: 100%;
+	ul {
+		height: 100px;
+		li {
+			display: inline;
+			font-size: 1em;
+			height: 100px;
+			a {
+			height: 100%;
+			display: inline-block;
+			border-bottom: 5px solid transparent;
+			vertical-align: middle;
+			color: @accent;
+			font-family: 'open_sanssemibold';
+			text-decoration: none;
+			text-transform: uppercase;
+			padding: 0px 25px;	
+			z-index: 50;
+			
+			&:hover{
+				text-decoration: none;
+				background: #f8f9fb;
+				color: @overlay;
+				border-color: @overlay;
+				}
+			&.active{
+				border-color: @overlay;
+				color: @overlay;
+				}
+			}
+		}
+	}
 }
