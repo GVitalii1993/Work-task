@@ -50,12 +50,13 @@ body {
   width: 1440px;
   height: 100px;
   position: fixed;
+  z-index: 50;
 }
 .logo {
   width: 120px;
   float: left;
   margin-left: 135px;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 .nav-bar {
   float: right;
@@ -64,6 +65,8 @@ body {
 }
 .nav-bar ul {
   height: 100px;
+  display: flex;
+  flex-direction: row;
 }
 .nav-bar ul li {
   display: inline;
@@ -72,15 +75,14 @@ body {
 }
 .nav-bar ul li a {
   height: 100%;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   border-bottom: 5px solid transparent;
-  vertical-align: middle;
   color: #485460;
   font-family: 'open_sanssemibold';
   text-decoration: none;
   text-transform: uppercase;
   padding: 0px 25px;
-  z-index: 50;
 }
 .nav-bar ul li a:hover {
   text-decoration: none;
@@ -91,4 +93,21 @@ body {
 .nav-bar ul li a.active {
   border-color: #68d1d3;
   color: #68d1d3;
+}
+.header-slider {
+  width: 100%;
+  height: 565px;
+  padding-top: 100px;
+}
+.navigation-slider {
+  position: absolute;
+}
+.slides {
+  height: 100%;
+}
+.slide-1 {
+  height: 100%;
+  text-align: center;
+  background-image: url('../img/slide1.jpg');
+  position: relative;
 }

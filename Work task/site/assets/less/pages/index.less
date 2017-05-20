@@ -10,12 +10,13 @@ body {
 	width: 1440px;
 	height: 100px;
 	position: fixed;
+	z-index: 50;
 }
 .logo {
 	width: 120px;
 	float: left;
 	margin-left: 135px;
-	margin-top: 25px;
+	margin-top: 30px;
 }
 .nav-bar {
 	float: right;
@@ -23,21 +24,22 @@ body {
 	height: 100%;
 	ul {
 		height: 100px;
+		display: flex;
+		flex-direction: row;
 		li {
 			display: inline;
 			font-size: 1em;
 			height: 100px;
 			a {
 			height: 100%;
-			display: inline-block;
+			display: flex;
+			align-items: center;
 			border-bottom: 5px solid transparent;
-			vertical-align: middle;
 			color: @accent;
 			font-family: 'open_sanssemibold';
 			text-decoration: none;
 			text-transform: uppercase;
-			padding: 0px 25px;	
-			z-index: 50;
+			padding: 0px 25px;
 			
 			&:hover{
 				text-decoration: none;
@@ -51,5 +53,29 @@ body {
 				}
 			}
 		}
+	}
+}
+
+.header-slider {
+	width: 100%;
+	height: 565px;
+	padding-top: 100px;
+}
+.navigation-slider {
+	position: absolute;
+}
+.slides{
+	height: 100%;
+}
+.slide-1 {
+	height: 100%;
+	text-align: center;
+	background-image: url('../img/slide1.jpg');
+	position: relative;
+	h1{
+	}
+	p {
+	}
+	a {
 	}
 }
