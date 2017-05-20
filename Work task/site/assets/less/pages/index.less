@@ -40,6 +40,7 @@ body {
 			text-decoration: none;
 			text-transform: uppercase;
 			padding: 0px 25px;
+			box-sizing: border-box;
 			
 			&:hover{
 				text-decoration: none;
@@ -60,22 +61,85 @@ body {
 	width: 100%;
 	height: 565px;
 	padding-top: 100px;
+	position: relative;
 }
 .navigation-slider {
 	position: absolute;
+	margin-top: 260px;
+	width: 100%;
+	z-index: 1;
+
+	button {
+		background-color: #fff;
+		width: 50px;
+		height: 50px;
+		border: 0px;
+		border-radius: 50%;
+
+		&:hover {
+			cursor: pointer;
+			text-decoration: none;
+			background: #f8f9fb;
+			color: @overlay;
+			border-color: @overlay;
+				}
+		&:focus {
+    		outline: none;
+			}
+	}
+}
+.fa {
+	font-size: 3em;
+}
+.arrow-left {	
+	margin-left: 25px;
+	padding-right: 10px;
+	float: left;
+}
+.arrow-right {
+	margin-right: 25px;
+	padding-left: 10px;
+	float: right;
 }
 .slides{
 	height: 100%;
 }
 .slide-1 {
+	width: 100%;
 	height: 100%;
 	text-align: center;
 	background-image: url('../img/slide1.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	font-family: 'open_sanssemibold';
 	position: relative;
+	color: #fff;
 	h1{
+		margin: 0px;
+		padding-top: 120px;
+		margin-bottom: 25px;
+		font-size: 3.9em;
 	}
 	p {
+		font-size: 1.43em;
+		font-family: 'open_sanslight';
+		margin-bottom: 70px;
 	}
 	a {
+		color: #fff;
+		text-decoration: none;
+    	text-transform: uppercase;
+    	padding: 15px 40px;
+    	border-radius: 5px;
+    	border: 2px solid;
+    	font-size: 1.62em;
+
+    	&:hover {
+    		background-color: #f8f9fb;
+			border-color: @overlay;
+			color: @overlay;
+		}
 	}
 }

@@ -28,6 +28,20 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'open_sanslight';
+  src: url('../fonts/opensans-light/opensans-light.eot');
+  src: url('../fonts/opensans-light/opensans-light.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-light/opensans-light.woff2') format('woff2'), url('../fonts/opensans-light/opensans-light.woff') format('woff'), url('../fonts/opensans-light/opensans-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font: 14px/1.71428571 'segoe', Arial, sans-sherif;
   background: #515f67;
@@ -83,6 +97,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0px 25px;
+  box-sizing: border-box;
 }
 .nav-bar ul li a:hover {
   text-decoration: none;
@@ -98,16 +113,82 @@ body {
   width: 100%;
   height: 565px;
   padding-top: 100px;
+  position: relative;
 }
 .navigation-slider {
   position: absolute;
+  margin-top: 260px;
+  width: 100%;
+  z-index: 1;
+}
+.navigation-slider button {
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border: 0px;
+  border-radius: 50%;
+}
+.navigation-slider button:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background: #f8f9fb;
+  color: #68d1d3;
+  border-color: #68d1d3;
+}
+.navigation-slider button:focus {
+  outline: none;
+}
+.fa {
+  font-size: 3em;
+}
+.arrow-left {
+  margin-left: 25px;
+  padding-right: 10px;
+  float: left;
+}
+.arrow-right {
+  margin-right: 25px;
+  padding-left: 10px;
+  float: right;
 }
 .slides {
   height: 100%;
 }
 .slide-1 {
+  width: 100%;
   height: 100%;
   text-align: center;
   background-image: url('../img/slide1.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  font-family: 'open_sanssemibold';
   position: relative;
+  color: #fff;
+}
+.slide-1 h1 {
+  margin: 0px;
+  padding-top: 120px;
+  margin-bottom: 25px;
+  font-size: 3.9em;
+}
+.slide-1 p {
+  font-size: 1.43em;
+  font-family: 'open_sanslight';
+  margin-bottom: 70px;
+}
+.slide-1 a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  border-radius: 5px;
+  border: 2px solid;
+  font-size: 1.62em;
+}
+.slide-1 a:hover {
+  background-color: #f8f9fb;
+  border-color: #68d1d3;
+  color: #68d1d3;
 }
