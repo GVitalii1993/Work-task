@@ -8,6 +8,7 @@
 	height: 100px;
 	position: fixed;
 	z-index: 50;
+	background-color: fade(@font, 80%);
 }
 .logo {
 	width: 120px;
@@ -142,7 +143,6 @@
 }
 
 // ------------------------ The Team ------------------------------
-
 .team-container {
 	h1 {
 		margin: 0px;
@@ -161,6 +161,9 @@
 		margin: 0px;
 		padding-top: 60px;
 	}
+}
+.info-person {
+	padding: 0px 15px;
 }
 .person-1, .person-2, .person-3, .person-4 {
 	width: 290px;
@@ -205,7 +208,34 @@
 		line-height: 250/70;
 	}
 }
-
+.person-1-img {
+	background-image: url('../img/ceo.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.person-2-img {
+	background-image: url('../img/director.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.person-3-img {
+	background-image: url('../img/founder.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.person-4-img {
+	background-image: url('../img/joker.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
 // ----------------------- Payment -----------------------
 
 
@@ -281,7 +311,7 @@
 // ----------------------- Footer ----------------------
 
 .contact-container {
-	height: 690px;
+	height: 700px;
 	background-image: url('../img/footer.jpg');
 	background-position: top center;
 	background-repeat: no-repeat;
@@ -380,7 +410,60 @@
 
 }
 .input-container {
-	width: 585px;
+	width: 575px;
+	margin-left: 10px;
+	padding-top: 5px;
+	box-sizing: border-box;
 	display: block;
 	float: right;
+}
+input {
+	font-family: 'open_sanssemibold';
+	font-size: 1.3em;
+	color: #c5c5c5;
+	padding-left: 20px;
+	border: 0px;
+	box-sizing: border-box;
+}
+#form-name {
+	width: 270px;
+	height: 40px;
+	border-radius: 3px;
+	float: left;
+
+}
+#form-email {
+	width: 270px;
+	height: 40px;
+	border-radius: 3px;
+	float: right;
+}
+#form-message {
+	margin-top: 30px;
+	padding: 20px; 
+	border-radius: 3px;
+	height: 180px;
+	width: 575px;
+	box-sizing: border-box;
+	font-family: 'open_sanssemibold';
+	color: #c5c5c5;
+	font-size: 1.3em;
+	resize: none;
+}
+#button-form {
+	width: 150px;
+	height: 50px;
+	margin-top: 20px;
+	border-radius: 4px;
+	background-color: @overlay;
+	float: right;
+	border: 2px solid transparent;
+	color: #fff;
+
+	&:hover {
+		border: 2px solid;
+		border-color: @accent;
+		cursor: pointer;
+		color: @accent;
+	}
 }
