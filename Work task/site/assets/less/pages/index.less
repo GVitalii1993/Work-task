@@ -60,6 +60,7 @@
 	height: 565px;
 	padding-top: 100px;
 	position: relative;
+	overflow:hidden;
 }
 .navigation-slider {
 	position: absolute;
@@ -99,12 +100,13 @@
 	padding-left: 10px;
 	float: right;
 }
-.slides{
+.slider{
+	position:relative;
 	height: 100%;
 }
-.slide-1 {
-	width: 100%;
+.slide1, .slide2 {
 	height: 100%;
+	width: 100%;
 	text-align: center;
 	background-image: url('../img/slide1.jpg');
 	background-position: top center;
@@ -113,6 +115,7 @@
 	background-attachment: scroll;
 	font-family: 'open_sanssemibold';
 	position: relative;
+	float:left;
 	color: #fff;
 	h1{
 		margin: 0px;
@@ -141,7 +144,6 @@
 		}
 	}
 }
-
 // ------------------------ The Team ------------------------------
 .team-container {
 	h1 {
