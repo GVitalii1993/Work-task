@@ -549,8 +549,8 @@ input {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #65a9d9;
-    box-shadow: 0 -13px #65a9d9, 0 13px #65a9d9;
+    background: #68d1d3;
+    box-shadow: 0 -13px #68d1d3, 0 13px #68d1d3;
     margin: 20px;
     box-sizing: border-box;
   }
@@ -567,7 +567,7 @@ input {
   }
   .nav-bar ul li {
     width: 100%;
-    height: 20px;
+    height: 40px;
     margin: 0px;
     padding: 0px;
     border-bottom: 1px solid #c5c5c5;
@@ -575,79 +575,79 @@ input {
   }
   .nav-bar ul li a {
     width: 100%;
-    height: 20px;
+    height: 40px;
     text-align: center;
     color: #fff;
     font-size: 0.7em;
     background-color: rgba(0, 0, 0, 0.7);
     border-bottom: 1px solid #c5c5c5;
     display: block;
-    padding: 2px 0px;
+    padding: 12px 0px;
   }
-}
-.header-slider {
-  padding-top: 50px;
-  height: 520px;
-}
-.navigation-slider {
-  display: none;
-}
-.slide h1 {
-  margin: 0px;
-  padding: 80px 10px 25px 10px;
-  font-size: 2em;
-}
-.team-container h1 {
-  padding: 60px 0px;
-}
-.team {
-  height: 2000px;
-  padding: 0px 16px;
-}
-.person-1,
-.person-2,
-.person-3,
-.person-4 {
-  margin-bottom: 50px;
-  border-bottom: 1px solid #c5c5c5;
-}
-.payment-container {
-  height: 1760px;
-  padding: 80px 10px 0px 10px;
-}
-.Basic,
-.Pro,
-.Premium {
-  width: 300px;
-  margin: 0px;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #c5c5c5;
-}
-.contact-container {
-  height: 900px;
-  padding: 80px 10px 25px 10px;
-}
-.contact-container h1 {
-  padding-top: 0px;
-  padding-bottom: 50px;
-}
-.contact-information {
-  padding: 0px 10px 20px 10px;
-  width: 100%;
-}
-.input-container {
-  width: 100%;
-}
-#form-name {
-  width: 100%;
-  margin-bottom: 10px;
-}
-#form-email {
-  width: 100%;
-  margin-bottom: 10px;
-}
-#form-message {
-  width: 100%;
-  margin: 0px;
+  .header-slider {
+    padding-top: 50px;
+    height: 520px;
+  }
+  .navigation-slider {
+    display: none;
+  }
+  .slide h1 {
+    margin: 0px;
+    padding: 80px 10px 25px 10px;
+    font-size: 2em;
+  }
+  .team-container h1 {
+    padding: 60px 0px;
+  }
+  .team {
+    height: 2000px;
+    padding: 0px 16px;
+  }
+  .person-1,
+  .person-2,
+  .person-3,
+  .person-4 {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #c5c5c5;
+  }
+  .payment-container {
+    height: 1760px;
+    padding: 80px 10px 0px 10px;
+  }
+  .Basic,
+  .Pro,
+  .Premium {
+    width: 300px;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c5c5c5;
+  }
+  .contact-container {
+    height: 900px;
+    padding: 80px 10px 25px 10px;
+  }
+  .contact-container h1 {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+  .contact-information {
+    padding: 0px 10px 20px 10px;
+    width: 100%;
+  }
+  .input-container {
+    width: 100%;
+  }
+  #form-name {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #form-email {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #form-message {
+    width: 100%;
+    margin: 0px;
+  }
 }
