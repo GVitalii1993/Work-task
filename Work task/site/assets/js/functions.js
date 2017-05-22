@@ -9,7 +9,13 @@
 		$('body,html').animate({scrollTop: top}, 500);
 	});
     
-  }); //end ready
+  });
+
+// --------------------mobi-nav-button--------------
+
+$('.mobi-nav').click(function (e){
+    $(".nav-bar").toggle();
+});
 
 // $(document).ready(function() {      
 //   var slider = $('.slider'),
@@ -96,18 +102,3 @@ $('.button-buy3').hover(
 );
 
 }(jQuery));
-
-
-
-
-// var div = document.getElementById('button-buy1');
-// var h2 = document.getElementById('h2-buy1');
-
-// div.onmouseover = function(){
-// 	div.setAttribute("style","background-color: #68d1d3;");
-// 	h2.setAttribute("style","background-color: #68d1d3;");
-
-// };
-// div.onmouseout = function(){
-// 	div.setAttribute("style","background-color: #4e525d;");
-// };
