@@ -395,15 +395,92 @@ footer {
 	padding: 90px 0 30px 0;
 	background-color: #000;
 	background-origin: border-box;
-
 }
 
 .footer-descript {
-	margin: 20px 0;
+	margin: 20px 0 30px 0;
+}
+
+.footer-contact ul li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
 }
 
 .footer-contact ul li span {
 	width: 25px;
 	height: 25px;
 	display: inline-block;
+	background-size: 100% auto;
+	margin-right: 10px;
+}
+
+.footer-contact ul li a{
+	
+}
+
+.phone {
+	background: url('../img/smartphone-call.svg');
+}
+
+.envolop{
+	background: url('../img/envelope.svg');
+}
+
+.twitter-footer {
+	background: url('../img/twitter-logo-silhouette.svg');
+}
+
+.facebook-footer {
+	background: url('../img/facebook-logo.svg');
+}
+
+.google-plus {
+	background: url('../img/google-plus-logo.svg');
+}
+
+.pinterest-footer {
+	background: url('../img/pinterest.svg');
+}
+
+
+form input{
+	height: 50px;
+	margin-bottom: 30px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	-moz-appearance: none;
+}
+
+#text-form {
+	height: 150px;
+	margin-bottom: 30px;
+	padding: 15px;
+	border-radius: 5px;
+	border: none;
+	resize: none;
+	outline: none;
+	-moz-appearance: none;
+}
+
+#submit {
+	border-radius: 25px;
+	background: #35c2f8;
+	height: 50px;
+	margin-bottom: 30px;
+	border: none;
+	border-radius: 25px;
+	outline: none;
+	-moz-appearance: none;
+}
+
+#name {
+}
+
+.pip {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
