@@ -1,3 +1,33 @@
+@font-face {
+	font-family: 'MyWebFont';
+	src: url('../fonts/BelloScript/BelloScript.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat-Bold';
+	src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat-Regular';
+	src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NotoSans-Regular';
+	src: url('../fonts/NotoSans/NotoSans-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
 *{
 	list-style-type: none;
 	text-decoration: none;
@@ -49,11 +79,19 @@
 
 header {
 	background: url('../img/hero_bg.jpg') no-repeat center;
+	position: relative;
+}
+
+nav {
+	position: fixed;
+	z-index: 999;
 }
 
 .logo {
 	box-sizing: border-box;
-	padding: 20px;
+	font-family: 'MyWebFont';
+	font-size: 2em;
+	position: relative;
 }
 
 .nav-bar {
@@ -63,7 +101,7 @@ header {
 }
 
 .nav-bar li {
-	margin: 20px;
+	margin: 10px;
 }
 
 .nav-bar li a:hover {
@@ -83,11 +121,14 @@ h1 {
     background-color: #35b9eb;
     height: 1px;
     width: 110px;
+    position: relative;
 }
 
 .descript-head {
 	margin: 50px 0 130px 0;
 	text-align: center;
+	position: relative;
+	font-family: 'NotoSans-Regular';
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -163,6 +204,8 @@ h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: 'Montserrat-Bold';
+	text-transform: uppercase;
 }
 
 .learn-more:hover {
@@ -388,7 +431,8 @@ h1 {
 
 /*--------------------------------------------------------------------------------------*/
 footer h2, footer p, footer a {
-	color: #fff;	
+	color: #fff;
+	font-family: 'NotoSans-Regular';	
 }
 
 footer {
@@ -413,10 +457,6 @@ footer {
 	display: inline-block;
 	background-size: 100% auto;
 	margin-right: 10px;
-}
-
-.footer-contact ul li a{
-	
 }
 
 .phone {
@@ -473,14 +513,80 @@ form input{
 	border-radius: 25px;
 	outline: none;
 	-moz-appearance: none;
+	color: #fff;
+	font-family: 'Montserrat-Regular';
+	text-transform: uppercase;
 }
 
-#name {
+#submit:hover {
+	color: #000;
+	background: #fff;
+	border: 2px solid #35c2f8;
+	transition: 0.5s;
 }
 
-.pip {
+.copy {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .6);
+	z-index: 0;
+}
+
+/*------------------------------------Text-Style-----------------------------------------*/
+
+.color-first {
+	color: white;
+} 
+
+.color-two {
+	color: #777777;
+}
+
+h1, h2 {
+	font-family: 'Montserrat-Bold'!important;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: 'Montserrat-Regular';
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+p {
+	font-family: 'NotoSans-Regular';
+}
+
+.nav-bar li a {
+	font-family: 'Montserrat-Regular';
+	color: white;
+	text-transform: uppercase;
+}
+
+.core-services p {
+	color: #777777;
+}
+
+.otherexpertise p {
+	color: #777777;
+}
+
+.amazing p {
+	color: #777777;
+}
+
+.about p {
+	color: #777777;
+}
+
+.awesome-team p {
+	color: #777777;
 }
