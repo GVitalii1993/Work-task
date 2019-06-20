@@ -13,18 +13,18 @@
 </head>
 <body>
 	<div class="container">
-
-		<header class="row">
+		
+		<header class="header row">
 			<div class="background"></div>
 			<nav class="col-md-12 fixed-top">
 				<div class="logo color-first col-md-2">Dreams</div>
 				<ul class="nav-bar col-md-10">
-					<li><a href="">Home</a></li>
-					<li><a href="#core-services">Services</a></li>
-					<li><a href="">Portfolio</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Teama</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href=".header">Home</a></li>
+					<li><a href=".core-services">Services</a></li>
+					<li><a href=".otherexpertise">Portfolio</a></li>
+					<li><a href=".about">About</a></li>
+					<li><a href=".awesome-team">Teama</a></li>
+					<li><a href=".footer">Contact</a></li>
 				</ul>
 			</nav>
 			<h1 class="color-first col-md-12">Build the web site of<br>your dreams</h1>
@@ -222,7 +222,7 @@
 			</div>
 		</div>
 		
-		<footer class="row">
+		<footer class="footer row">
 			<span class="col-sm-1"></span>
 			<div class="col-sm-5">
 				<h2 class="">Contact us</h2>
@@ -252,7 +252,19 @@
 				<p>&copy; 2014 Dreams By FreeediesXpress</p>
 			</div>
 		</footer>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>
+	$(document).ready(function () {
+    
+    $(".nav-bar").on("click","a", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 500);
+	});
+    
+  });
+</script>
 	</div>
 </body>
 </html>
